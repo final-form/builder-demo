@@ -16,4 +16,5 @@ const Link = styled.a`
   right: 15px;
   font-size: 35px;
   color: #333;
+  z-index: 10;
 `
