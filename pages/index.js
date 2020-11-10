@@ -1,9 +1,9 @@
 import React from 'react'
-import { render } from 'react-dom'
-import styled, { ThemeProvider } from 'styled-components'
-import { colors } from '../styles'
+import {render} from 'react-dom'
+import styled, {ThemeProvider} from 'styled-components'
+import {colors} from '../styles'
 import Icon from 'react-fontawesome'
-import { Form, Field } from 'react-final-form'
+import {Form, Field} from 'react-final-form'
 import arrayMutators from 'final-form-arrays'
 import Questions from '../components/Questions'
 import Button from '../styles/Button'
@@ -19,10 +19,7 @@ export default class App extends React.Component {
           <GithubLink />
           <Header>
             Demo built with{' '}
-            <a
-              href="https://github.com/final-form/react-final-form#-react-final-form"
-              target="_blank"
-            >
+            <a href="https://final-form.org/react" target="_blank">
               🏁 React Final Form
             </a>
           </Header>
@@ -72,17 +69,17 @@ export default class App extends React.Component {
               }
             }
             mutators={{
-              ...arrayMutators
+              ...arrayMutators,
             }}
             render={({
               handleSubmit,
               reset,
               submitting,
               form: {
-                mutators: { push, pop } // injected from final-form-arrays above
+                mutators: {push, pop}, // injected from final-form-arrays above
               },
               pristine,
-              values
+              values,
             }) => (
               <Columns>
                 <form onSubmit={handleSubmit}>
@@ -95,7 +92,7 @@ export default class App extends React.Component {
                       component="input"
                       type="text"
                       placeholder="Form Name"
-                      style={{ width: '100%' }}
+                      style={{width: '100%'}}
                     />
                   </Row>
                   <Questions />
