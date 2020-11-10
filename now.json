@@ -1,9 +1,0 @@
-{
-  "name": "form-builder-demo",
-  "version": 1,
-  "type": "npm",
-  "engines": {
-    "node": "10.7.0",
-    "npm": "6.2.0"
-  }
-}
