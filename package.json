@@ -16,7 +16,7 @@
     "final-form": "^4.20.1",
     "final-form-arrays": "^3.0.2",
     "match-sorter": "^5.0.0",
-    "next": "^10.0.1",
+    "next": "^11.1.0",
     "parse-json": "^5.1.0",
     "react": "^17.0.1",
     "react-addons-shallow-compare": "^15.6.2",
